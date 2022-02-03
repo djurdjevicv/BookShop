@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/knjige.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet"> 
+    <title>Knjige</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><i class="fa fa-arrow-left"></i> Vrati se nazad</a>
+        <button id="dugme-prijava" onclick="openForm()"><a href="#" id="prijava"><i class="fa fa-sign-in"></i> <b>PRIJAVA</b></a></button>
+    </header>
+    <main>
+        <div class="ceo-opis">
+            <img id="slika">
+            <div class="opis">
+                <span class="prvi">Isbn:</span> <span id="isbn"></span> </br>
+                <span class="prvi">Naziv:</span> <span id="naziv"></span> </br>
+                <span class="prvi">Izdavacka kuca:</span> <span id="izdavackaKuca"></span> </br> 
+                <span class="prvi">Autor:</span> <span id="autor"></span> </br>
+                <span class="prvi">Jezik:</span> <span id="jezik"></span> </br>
+                <span class="prvi">Pismo:</span> <span id="pismo"></span> </br>
+                <span class="prvi">Broj stranica:</span> <span id="brojStranica"></span> </br>
+                <span class="prvi">Tip poveza:</span> <span id="tipPoveza"></span> </br>
+                <span class="prvi">Godina izdavanja:</span> <span id="godinaIzdavanja"></span> </br>
+            <div class="zvezdice">
+                <input type="radio" id="ocena-5">
+                <label for="ocena-5" class="fa fa-star" id="ocena5"></label>
+                <input type="radio" id="ocena-4">
+                <label for="ocena-4" class="fa fa-star" id="ocena4"></label>
+                <input type="radio" id="ocena-3">
+                <label for="ocena-3" class="fa fa-star" id="ocena3"></label>
+                <input type="radio" id="ocena-2">
+                <label for="ocena-2" class="fa fa-star" id="ocena2"></label>
+                <input type="radio" id="ocena-1">
+                <label for="ocena-1" class="fa fa-star" id="ocena1"></label>
+            </div> 
+                <div id="ocena"></div> </br>
+                <span class="prvi">Opis:</span> <span id="opis"></span> </br>
+                <span class="prvi">Cena:</span> <span id="cena"></span> </br>
+                <a id="kupi"><i class="fa fa-shopping-cart"></i> DODAJ U KORPU</a>
+                <a id="izmena"><i class="fa fa-database"></i> IZMENI PODATKE</a>
+            </div>
+        </div>
+        <div class="forma" id="login">   
+            <form action="#" class="forma-cont"> 
+              <h1>Prijava</h1>
+          
+              <label for="email">Email</label>
+              <input type="text" placeholder="Unesi Email" name="email" required>
+          
+              <label for="password">Lozinka</label>
+              <input type="password" placeholder="Unesi Lozinku" name="password" required>
+          
+              <button type="submit" class="dugme">Prijavi se</button>
+              <button type="submit" class="dugme izadji" onclick="closeForm()">Izadji</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../JS/pojedinacne-knjige.js"></script>
+</body>
+</html>

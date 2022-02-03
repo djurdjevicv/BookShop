@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/korpa.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet"> 
+    <title>Korpa</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><i class="fa fa-home"></i> Vrati se nazad</a>
+        <h1><i class="fa fa-shopping-cart"></i> Korpa</h1>
+        <button id="dugme-prijava" onclick="openForm()"><a href="#" id="prijava"><i class="fa fa-sign-in"></i> PRIJAVA</a></button>
+    </header>
+    <main>
+
+    <main>
+        <h1>Vaša korpa</h1>
+    <div style="overflow-x:auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th class="prvi"></th>
+                    <th>Proizvod</th>
+                    <th>Cena</th>
+                    <th>Količina</th>
+                    <th>Ukupno</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../Slike/Azadi.jpg" alt="Azadi-Arundhati Roy"></td>
+                    <td>Azadi-Arundhati Roy</td>
+                    <td>935,00din</td>
+                    <td>
+                        <select name="" id="kolicina">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                            <option value="5">7</option>
+                            <option value="5">8</option>
+                            <option value="5">9</option>
+                            <option value="5">10</option>
+                        </select>
+                    </td>
+                    <td>935,00din</td>
+                    <td>
+                        <button type="reset" class="izbrisi"><i class="fa fa-trash"></i> Izbriši</button>
+                        <button type="submit" class="kupi"><i class="fa fa-shopping-cart"></i> Kupi</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    </main>
+    <div class="forma" id="login">   
+        <form action="#" class="forma-cont"> 
+          <h1>Prijava</h1>
+      
+          <label for="email">Email</label>
+          <input type="text" placeholder="Unesi Email" name="email" required>
+      
+          <label for="password">Lozinka</label>
+          <input type="password" placeholder="Unesi Lozinku" name="password" required>
+      
+          <button type="submit" class="dugme">Prijavi se</button>
+          <button type="submit" class="dugme izadji" onclick="closeForm()">Izadji</button>
+        </form>
+    </div>
+    
+    <script>
+        function openForm() {
+          document.getElementById("login").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("login").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

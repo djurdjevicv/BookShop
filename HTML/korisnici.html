@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korisnici</title>
+    <link rel="stylesheet" href="../CSS/korisnici.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../HTML/index.html"><i class="fa fa-home"></i> Vrati se nazad</a>
+        <h1><i class="fa fa-users"></i> Korisnici</h1>
+        <button id="dugme-prijava" onclick="openForm()"><a href="#" id="prijava"><i class="fa fa-sign-in"></i> PRIJAVA</a></button>
+    </header>
+    
+    <main>
+        <div id="container">
+            <div class="kutija korisnik">
+                <img src="../Slike/user-icon.svg">
+                <div class="ime">
+                    <span id="ime"></span> <span id="prezime"></span> </br>
+                    <a id="detaljnije" class="detaljnije">Detaljnije</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="forma" id="login">   
+        <form action="#" class="forma-cont"> 
+          <h1>Prijava</h1>
+      
+          <label for="email">Email</label>
+          <input type="text" placeholder="Unesi Email" name="email" required>
+      
+          <label for="password">Lozinka</label>
+          <input type="password" placeholder="Unesi Lozinku" name="password" required>
+      
+          <button type="submit" class="dugme">Prijavi se</button>
+          <button type="submit" class="dugme izadji" onclick="closeForm()">Izadji</button>
+        </form>
+    </div>
+    
+    <script src="../JS/korisnici.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Slike/pozadina-pojedinacne-knjige.JPG);
+}
+
+header {
+    color: #59788e;
+    background-color: #151e3d;
+    margin: 5px;
+    height: 80px;
+}
+
+header a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: #59788e;
+    font-size: 25px;
+    margin: 20px 10px 5px 10px;
+    padding: 5px 15px;
+}
+
+header a:hover {
+    background-color: #f7e05f;
+    color: #151e3d;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 320px;
+    padding: 10px;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+header #dugme-prijava {
+    float: right;
+    border: none;
+    background-color: unset;
+}
+
+header #prijava {
+    text-decoration: none;
+    border: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: #f7e05f;
+    color: #151e3d;
+    border-radius: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.korisnik {
+    display: block;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+    text-align: center;
+    float: left;
+    background-color: #151e3d;
+}
+
+.korisnik:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.5);
+}
+
+.korisnik img {
+    width: 50%;
+}
+
+.detaljnije {
+    background-color: #151e3d;
+    color: #f7e05f;
+    padding: 0 20px;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.detaljnije:hover {
+    color: #59788e;
+}
+
+.korisnik .ime {
+    padding: 20px;
+    font-size: 23px;
+    color: #f7e05f;
+    background-color:  #59788e;
+}
+
+.forma {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #151e3d;
+    z-index: 9;
+}
+  
+.forma-cont {
+    max-width: 450px;
+    padding: 10px;
+    background-color: #bdbdbd;
+    color: #151e3d;
+    font-size: 25px;
+}
+
+.forma-cont h1 {
+    color: #151e3d;
+    text-align: center;
+    font-size: 35px;
+    font-weight: unset;
+}
+  
+.forma-cont input[type=text], .forma-cont input[type=password] {
+    color: #151e3d;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+}
+  
+.forma-cont input[type=text]:focus, .forma-cont input[type=password]:focus {
+    background-color: #f7e05f;
+    outline: none;
+}
+  
+.forma-cont .dugme {
+    background-color: #59788e;
+    color: #151e3d;
+    font-size: 20px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+.forma-cont .izadji {
+    background-color: #f7e05f;
+}
+  
+.forma-cont .dugme:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    header {
+        text-align: center;
+        height: 144px;
+        margin: 0px;
+    }
+
+    header a {
+        float: none;
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    header a:hover {
+        background-color: #151e3d;
+        color: #f7e05f;
+    }
+
+    header h1 {
+        margin-left: 0px;
+        font-size: 25px;
+        display: block;
+    }
+
+    header #dugme-prijava {
+        float: none;
+    }
+
+    header #prijava {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .korisnik .ime {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .forma {
+        width: 90%;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/knjige-edit.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Izmena knjiga</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="slika">
+            <img id="slika">
+        </div>
+        <div class="forma-edit">
+            <form action="#">
+                <h2>Izmeni podatke knjige</h2>
+                <span>Isbn:</span> <span id="isbn"></span> </br>
+
+                <label for="izdavackaKuca" >Izdavacka kuca:</label>
+                <input id="izdavackaKuca" type="text">
+                
+                <label for="naziv">Naziv knjige:</label>
+                <input id="naziv" type="text">
+    
+                <label for="autor">Autor:</label>
+                <input id="autor" type="text">
+            
+                <label for="jezik">Jezik:</label>
+                <input id="jezik" type="text">
+    
+                <p>Pismo:</p>
+                <select name="pismo" id="pismo">
+                    <option value="Latinica">Latinica</option>
+                    <option value="Cirilica">Cirilica</option>
+                </select>
+    
+                <label for="brojStranica">Broj stranica:</label>
+                <input id="brojStranica" type="number">
+    
+                <p>Povez:</p>
+                <select name="povez" id="Povez">
+                    <option value="Meki">Meki</option>
+                    <option value="Tvrdi">Tvrdi</option>
+                </select>
+    
+                <label for="godinaIzdavanja">Godina izdavanja:</label>
+                <input id="godinaIzdavanja" type="number">
+    
+                <label for="opis">Opis:</label>
+                <textarea id="opis" cols="55" rows="10"></textarea>
+                
+                <label for="cena">Cena:</label>
+                <input id="cena" type="number">
+            
+                <button>Prihvati izmene</button>
+                <button id="nazad"> Izadji</button>
+                <button id="dugmeObrisi">Obrisi knjigu</button>
+            </form>
+
+            <div class="forma-obrisi" id="obrisi">
+                <p>Da li ste sigurni da zelite da obrisete knjigu?</p>
+                <div id="odgovori">
+                    <button id="da">Da</button>
+                    <button id="ne">Ne</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../JS/izmena-knjiga.js"></script>
+</body>
+</html>

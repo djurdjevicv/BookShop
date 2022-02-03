@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/korisnik-style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Korisnik</title>
+</head>
+<body>
+    <header>
+    <div class="sve">
+        <div class="back">
+        <a href="../HTML/korisnici.html"><i class="fa fa-users"></i> Vrati se nazad</a>
+        </div>
+        <div class="ime">
+        <i class="fa fa-user" id="user"></i> <span id="ime1"></span> <span id="prezime1"></span>
+        </div>
+        <div class="home">
+        <a href="../HTML/index.html"><i class="fa fa-home"></i> Home</a>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="slika">
+                <img src="../Slike/user-icon.svg">
+            </div>
+            <div class="info">
+                <span class="prvi">Ime:</span> <span id="ime"></span> </br>
+                <span class="prvi">Prezime:</span> <span id="prezime"></span> </br>
+                <span class="prvi">Username:</span> <span id="username"></span> </br>
+                <span class="prvi">Datum rodjenja:</span> <span id="datumRodjenja"></span> </br>
+                <span class="prvi">Adresa:</span> <span id="adresa"></span> </br>
+                <span class="prvi">Broj telefona:</span> <span id="telefon"></span> </br>
+                <span class="prvi">Email:</span> <span id="email"></span> </br>
+            </div>
+        </div>
+        <a id="izmena" class="izmena"><i class="fa fa-database"></i> Izmeni podatke</a>
+        <button id="dugme-prijava" onclick="openForm()"><a href="#" id="prijava"><i class="fa fa-sign-in"></i> PRIJAVA</a></button>
+    </main>
+
+
+    <div class="forma" id="login">   
+        <form action="#" class="forma-cont"> 
+          <h1>Prijava</h1>
+      
+          <label for="email">Email</label>
+          <input type="text" placeholder="Unesi Email" name="email" required>
+      
+          <label for="password">Lozinka</label>
+          <input type="password" placeholder="Unesi Lozinku" name="password" required>
+      
+          <button type="submit" class="dugme">Prijavi se</button>
+          <button type="submit" class="dugme izadji" onclick="closeForm()">Izadji</button>
+        </form>
+    </div>
+    
+    <script src="../JS/detaljnije-korisnici.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet"> 
+        <title>Knjižara sova</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">KNJIŽARA SOVA</div>
+                <ul class="nav-link">
+                    <li><a href="index.html"><i class="fa fa-home"></i> HOME</a></li>
+                    <li><a href="#sve"><i class="fa fa-book"></i> SVE KNJIGE</a></li>
+                    <li><a href="korisnici.html"><i class="fa fa-users"></i> KORISNICI</a></li>
+                    <li><a href="korpa.html"><i class="fa fa-shopping-cart"></i> KORPA</a></li>
+                    <button id="dugme-registracija" onclick="openFormSignin()"><li><a href="#" id="registracija"><i class="fa fa-sign-in"></i> REGISTRACIJA</a></li></button>
+                    <button id="dugme-prijava" onclick="openForm()"><li><a href="#" id="prijava"><i class="fa fa-sign-in"></i> PRIJAVA</a></li></button>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="pozadina">
+                <img src="../Slike/pozadina.jpg" alt="Devojka sa knjigom">
+                <div class="logo-text">KNJIŽARA SOVA</div>
+                <div class="dugme-sve"><a href="#sve">SVE KNJIGE U PONUDI</a></div>
+            </div>
+        
+
+                    <div id="sve">
+                        <div class="kutija kartice">
+                            <a id="link"><p id="nazivID"></p></a>
+                            <p id="autor"></p>
+                            <p id="cena"></p>
+                            <span class="zvezdice">
+                                <div id="ocena"></div>
+                                <input type="radio" id="ocena-5">
+                                <label for="ocena-5" class="fa fa-star" id="ocena5"></label>
+                                <input type="radio" id="ocena-4">
+                                <label for="ocena-4" class="fa fa-star" id="ocena4"></label>
+                                <input type="radio" id="ocena-3">
+                                <label for="ocena-3" class="fa fa-star" id="ocena3"></label>
+                                <input type="radio" id="ocena-2">
+                                <label for="ocena-2" class="fa fa-star" id="ocena2"></label>
+                                <input type="radio" id="ocena-1">
+                                <label for="ocena-1" class="fa fa-star" id="ocena1"></label>
+                            </span>
+                            <button id="kupi"><i class="fa fa-shopping-cart"></i> DODAJ U KORPU</button> 
+                            <a id="linkSlike"><img id="slika"></a>
+                        </div>
+                    </div>
+            
+
+
+        <footer>
+            <div class="informacije">
+                <div class="sekcija o-nama">
+                    <h2 class="h2">O Nama</h2>
+                    <p>Ovo je naš početak, otvorili smo tek prvu biblioteku. Vodili smo se idejom da čitalačkoj publici na jednom mestu ponudimo kvalitetan izbor. Osim domaćih izvođača u ponudi imamo i literaturu na stranim jezicima. Za poručivanje knjiga koje nisu u našoj ponudi kontaktirajte nas putem mejla.</p>
+                    <ul class="mreze">
+                        <li><a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/_vladaa01/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sekcija o-nama">
+                    <h2>Knjižara SOVA</h2>
+                    <ul class="kontakti">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i> </br></span>
+                            <span>
+                                &nbspDesanke Maksimović </br>
+                                Lajkovac 14224 </br>
+                                Srbija 
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                               <p><a href="tel:+381645049125">&nbsp+381645049125</a></p> 
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope-o"></i> </span>
+                            <p><a href="mailto:vladimir.djurdjevic411@gmail.com"> &nbspvladimir.djurdjevic411@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="forma" id="login">   
+            <form action="#" method="GET" id="forma-cont"> 
+              <h1>Prijava</h1>
+          
+              <label for="username"><b>Username</b></label>
+              <input id="username" type="text" placeholder="Unesi korisnicko ime" name="username" autocomplete="off">
+          
+              <label for="password"><b>Lozinka</b></label>
+              <input id="password" type="password" placeholder="Unesi Lozinku" name="password" autocomplete="off">
+          
+              <button type="submit" class="dugme" id="prijava1">Prijavi se</button>
+              <button type="submit" class="dugme izadji" onclick="closeForm()">Izadji</button>
+            </form>
+        </div>
+    
+        <div class="forma" id="signin">
+            <form action="#" id="forma-signin"> 
+              <h1>Registruj se</h1>
+              <label for="ime"><b>Ime</b></label>
+              <input type="text" placeholder="Unesi ime" name="ime" id="ime" autocomplete="off">
+
+              <label for="prezime"><b>Prezime</b></label>
+              <input type="text" placeholder="Unesi prezime" name="prezime" id="prezime" autocomplete="off">
+
+              <label for="username"><b>Korisničko ime</b></label>
+              <input type="text" placeholder="Unesi korisničko ime" name="username" id="username" autocomplete="off">
+
+              <label for="datumRodjenja"><b>Datum rođenja</b></label>
+              <input type="date" placeholder="Unesi datum rođenja" name="datumRodjenja" id="datumRodjenja" autocomplete="off">
+
+              <label for="password"><b>Lozinka</b></label>
+              <input type="password" placeholder="Unesi Lozinku" name="password" id="password" autocomplete="off">
+
+              <label for="adresa"><b>Adresa</b></label>
+              <input type="text" placeholder="Unesi adresu" name="adresa" id="adresa" autocomplete="off">
+
+              <label for="telefon"><b>Broj telefona</b></label>
+              <input type="tel" placeholder="Unesi broj telefona" name="telefon" id="telefon" autocomplete="off">
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Unesi Email" name="email" id="email" autocomplete="off">
+          
+              <button type="submit" class="dugme" id="submit">Registruj se</button>
+              <button class="dugme izadji" onclick="closeFormSignin()">Izadji</button>
+            </form>
+        </div>
+
+        <script src="../JS/script.js"></script>
+        <script src="../JS/login.js"></script>
+
+    </body>
+
+</html>

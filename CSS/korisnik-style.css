@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-image: url(../Slike/pozadina-pojedinacne-knjige.JPG);
+}
+
+header {
+    color: #59788e;
+    background-color: #151e3d;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+header .sve {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+header .sve .back {
+    margin-top: 35px;
+}
+
+header .sve .ime {
+    margin-top: 25px;
+}
+
+header .sve .home {
+    margin-top: 35px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #59788e;
+}
+
+header a:hover {
+    background-color: #f7e05f;
+    color: #151e3d;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+header h1, #ime1, #prezime1, #user {
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    background-color: #59788e;
+}
+
+.container .slika img {
+    width: 60%;
+}
+
+.info {
+    text-align: justify;
+    padding: 10px;
+    font-size: 24px;
+    margin-right: 100px;
+    line-height: 50px;
+    color: #151e3d;
+    font-weight: bold;
+}
+
+.info .prvi {
+    font-size: 18px;
+    color: #151e3dd0; 
+    font-weight: normal;
+}
+
+.info a {
+    text-decoration: none;
+    color: #151e3d;
+}
+
+.info a:hover {
+    color: #f7e05f;
+}
+
+main {
+    display: block;
+    text-align: center;
+}
+
+main .izmena {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #151e3d;
+    font-size: 25px;
+    transition: 0.5s;
+    background-color: #f7e05f;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 20%;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+main .izmena:hover, #prijava:hover {
+    color: #59788e;
+}
+
+main #dugme-prijava {
+    border: none;
+    background-color: unset;
+}
+
+main #prijava {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: #f7e05f;
+    color: #151e3d;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.forma {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #151e3d;
+    z-index: 9;
+}
+  
+.forma-cont {
+    max-width: 450px;
+    padding: 10px;
+    background-color: #bdbdbd;
+    color: #151e3d;
+    font-size: 25px;
+}
+
+.forma-cont h1 {
+    color: #151e3d;
+    text-align: center;
+    font-size: 35px;
+    font-weight: unset;
+}
+  
+.forma-cont input[type=text], .forma-cont input[type=password] {
+    color: #151e3d;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+}
+  
+.forma-cont input[type=text]:focus, .forma-cont input[type=password]:focus {
+    background-color: #f7e05f;
+    outline: none;
+}
+  
+.forma-cont .dugme {
+    background-color: #59788e;
+    color: #151e3d;
+    font-size: 20px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+.forma-cont .izadji {
+    background-color: #f7e05f;
+}
+  
+.forma-cont .dugme:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    header {
+        color: #59788e;
+        background-color: #151e3d;
+        height: 170px;
+        margin: 0;
+    }
+    
+    header .sve {
+        display: inline;
+        margin: 0;
+    }
+
+    header .sve .back {
+        margin-top: 0;
+        padding: 5px;
+    }
+
+    header .sve .ime {
+        margin-top: 10px;
+    }
+
+    header .sve .home {
+        margin-top: 10px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #59788e;
+        font-size: 15px;
+    }
+    
+    header h1 { 
+        padding: 10px;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    
+    .container {
+        text-align: center;
+        margin: 5px;
+        display: block;
+    }
+    .container .slika img {
+        width: 40%;
+    }
+
+    .container .info {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    main .izmena {
+        margin-top: 20px;
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .forma {
+        width: 90%;
+    }
+}

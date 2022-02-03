@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/korisnik-edit.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Izmena-korisnika</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="slika">
+                <img src="../Slike/user-icon.svg">
+            </div>    
+            <div class="forma-edit">   
+                <form action="#" class="podaci"> 
+                    <h2>Izmeni podatke</h2>
+                    <span>Username:</span> <span id="username"></span> </br>
+                
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime"> </br>
+                
+                
+                
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime"> </br>               
+                
+                
+                    <label for="password">Lozinka:</label>
+                    <input type="password" id="password"> </br>
+                
+                
+                    <label for="datumRodjenja">Datum rodjenja:</label>
+                    <input type="date" id="datumRodjenja"> </br>
+                
+                
+                    <label for="adresa">Adresa:</label>
+                    <input type="text" id="adresa"> </br>
+                
+                
+                    <label for="telefon">Telefon:</label>
+                    <input type="Phone" id="telefon"> </br>
+                
+                
+                    <label for="email">Email:</label>
+                    <input type="text" id="email"> </br>
+                
+                
+                  <button type="submit" class="dugme">Prihvati izmene</button>
+                  <button id="nazad">Izadji</button>
+                  <button id="dugmeObrisi">Obrisi korisnika</button>
+                </form>
+            </div>
+        </div>
+        <div class="forma-obrisi" id="obrisi">
+            <p>Da li ste sigurni da zelite da obrisete knjigu?</p>
+            <div id="odgovori">
+                <button id="da">Da</button>
+                <button id="ne">Ne</button>
+            </div>
+        </div>
+    </main>
+    <script src="../JS/izmena-korisnika.js"></script>
+
+</body>
+</html>

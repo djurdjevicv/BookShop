@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bdbdbd;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Slike/pozadinaKorisnici.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #59788ed0;
+    margin: 10px;
+}
+
+.container .slika img{
+    width: 50%;
+    float: left;
+    margin-right: 50px;
+    display: block;
+}
+
+
+.container .forma-edit {
+    color:  #151e3d;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container .forma-edit input[type=text], input[type=number], textarea, select {
+    width: 100%;
+    height: 35px;
+    display: block;
+    font-size: 15px;
+    background: #59788ec2;
+    border: 2px solid #151e3d;
+    outline: none;
+}
+
+.container .forma-edit input[type=text]:focus, input[type=number]:focus, textarea:focus, select:focus {
+    background-color: #f7e05f9c;
+}
+
+.container .forma-edit input::placeholder, textarea::placeholder,select {
+    color: #151e3d;
+}
+
+.container .forma-edit textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.container .forma-edit button {
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: #f7e05f9c;
+    color: #151e3d;
+    border: 2px solid #151e3d;
+    padding: 7px;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: none;
+}
+
+.container .forma-edit button:hover, a:hover {
+    background-color: #f7e05f;
+}
+
+#obrisi {
+    display: none;
+}
+
+.forma-obrisi { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #f7e05f;
+    z-index: 9;
+    background-color: #59788e;
+    color: #f7e05f;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+
+.forma-obrisi p {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#odgovori {
+    margin-top: 50px;
+}
+
+#da, #ne {
+    width: 15%;
+}
+
+#da {
+    background-color: green;
+    opacity: 0.7;
+}
+
+#ne {
+    background-color: red;
+    opacity: 0.7;
+}
+
+#da:hover, #ne:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        display: block;
+        text-align: center;
+        background-color: unset;
+    }
+
+    .container .slika img {
+        width: 50%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .forma-edit {
+        line-height: 25px;
+    }
+
+    .container .forma-edit h2 {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .container .forma-edit p, label {
+        font-size: 20px;
+    }
+
+    .container .forma-edit input[type=text], input[type=number], textarea, select {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .forma-obrisi {
+        width: 90%;
+    }
+
+    #odgovori {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+

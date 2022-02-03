@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-image: url(../Slike/pozadina-pojedinacne-knjige.JPG);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 15px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: #151e3d;
+    background-color: #59788e;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #59788e;
+    background-color: #151e3d;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+header #dugme-prijava {
+    border: none;
+    background-color: unset;
+    letter-spacing: 3px;
+}
+
+header #prijava {
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+}
+
+.ceo-opis {
+    display: block;
+    margin: 25px;
+    padding: 20px;
+    background-color: #59788ef6; 
+    color: #151e3d;
+    box-shadow: 0 6px 10px 0 #151e3d, 0 10px 24px 0 #151e3d;
+    letter-spacing: 1px;
+    height: 900px;
+}
+
+.opis {
+    float: right;
+    width: 60%;
+    text-align: left;
+    line-height: 35px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.ocena {
+    color: #151e3d;
+}
+
+.ocena:hover {
+    color: #f7e05f;
+}
+
+#kupi, #izmena {
+    text-align: center;
+    text-decoration: none;
+    color: #151e3d;
+    background-color: #f7e05f;
+    padding: 10px 25px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    width: 70%;
+    display: block;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kupi {
+    margin-top: 3%;
+}
+
+#kupi:hover, #izmena:hover {
+    color: #f7e05f;
+    background-color: #151e3d;
+    padding: 10px 25px;
+    font-size: 25px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.prvi {
+    color: #151e3dbe;
+    font-size: 20px;
+}
+
+.checked {
+    color: #f7e05f;
+}
+
+#cena {
+    font-size: 28px;
+    color: #f7e05f;
+}
+
+.forma {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #151e3d;
+    z-index: 9;
+}
+  
+.forma-cont {
+    max-width: 450px;
+    padding: 10px;
+    background-color: #bdbdbd;
+    color: #151e3d;
+    font-size: 25px;
+}
+
+.forma-cont h1 {
+    color: #151e3d;
+    text-align: center;
+    font-size: 35px;
+    font-weight: unset;
+}
+  
+.forma-cont input[type=text], .forma-cont input[type=password] {
+    color: #151e3d;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+}
+  
+.forma-cont input[type=text]:focus, .forma-cont input[type=password]:focus {
+    background-color: #f7e05f;
+    outline: none;
+}
+  
+.forma-cont .dugme {
+    background-color: #59788e;
+    color: #151e3d;
+    font-size: 20px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+.forma-cont .izadji {
+    background-color: #f7e05f;
+}
+  
+.forma-cont .dugme:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.zvezdice input{
+    display: none;
+} 
+
+.zvezdice {
+    float: left;
+} 
+
+.zvezdice label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}  
+
+#ocena {
+    margin-top: 15px;
+    margin-left: 320px;
+    color: #fd4;
+}
+
+@media screen and (max-width:700px) {
+    header {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    header a {
+        margin-top: 5px;
+        display: block;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    main .ceo-opis {
+        margin: 10px;
+        text-align: center;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    main .ceo-opis img {
+        width: 50%;
+    }
+
+    main .ceo-opis .opis {
+        margin-top: 10px;
+        text-align: center;
+        line-height: 30px;
+        float: none;
+        width: 100%;
+    }
+
+    #kupi, #izmena {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .forma {
+        width: 90%;
+    }
+}
+
